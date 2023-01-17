@@ -5,31 +5,27 @@ box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background:#223243;
+body{ 
+   background:#223243;
 }
 
 .container{
-    padding: 40px;
+    /* padding: 40px; */
     border: 8px solid #223243;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     box-shadow: -5px -5px 15px rgba(255,255,255,0.1),
                  5px  5px 15px rgba(0,0,0,0.35),
           inset -5px -5px 15px rgba(255,255,255,0.1),
           inset  5px  5px 15px rgba(0,0,0,0.35);
 }
 
-.container .form{
+/* .container .form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
     gap:25px;
-}
+} */
 
 
 .container .form.signin,
@@ -40,11 +36,11 @@ body{
 .container.signinForm .form.signin{
     display: flex;
 }
-.container .form  h2{
+/* .container .form  h2{
     color: #fff;
     font-weight: 500;
     letter-spacing: 0.1em;
-}
+} */
 
 .container .form .inputbox{
     position: relative;
@@ -118,14 +114,14 @@ body{
           inset  5px  5px 15px rgba(0,0,0,0.35);
 }
 
-.container .form p{
+/* .container .form p{
     color: rgba(255,255,255,0.5);
     font-size: 0.75em;
     font-weight: 300;
-}
+} */
 
-.container .form p a{
+/* .container .form p a{
     font-weight: 500;
     color: #fff;
     text-decoration: none;
-}
+} */

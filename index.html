@@ -15,17 +15,17 @@
     <link rel="stylesheet" href="style.css">
     <title>Form</title>
 </head>
-<body>
-   <div class="container">
-    <div class="form signup">
-        <h2>Sign Up</h2>
+<body class="flex justify-center items-center min-h-screen">
+   <div class="container mx-[30em] p-10 border-8 rounded-[20px] border-solid ">
+    <div class="form signup flex justify-center items-center flex-col gap-6">
+        <h2 class="text-white font-bold tracking-widest">Sign Up</h2>
         <div class="inputbox">
             <input type="text" required="required">
             <i class="fa-regular fa-user"></i>
             <span>UserName</span>
         </div>
         <div class="inputbox">
-            <input type="text" required="required">
+            <input id="email" type="email" required="required">
             <i class="fa-regular fa-envelope"></i>
             <span>Email Address</span>
         </div>
@@ -43,13 +43,13 @@
             <input type="submit" value="Create Account" >
         </div>
 
-        <p>Already an Account?<a href="#" class="login"> Log in</a></p>
+        <p class="text-gray-400 text-xs font-light">Already an Account?<a href="#" class="login text-white font-medium no-underline"> Log in</a></p>
        
 
     </div>
 
-    <div class="form signin">
-        <h2>Log In</h2>
+    <div class="form signin flex justify-center items-center flex-col gap-6">
+        <h2 class="text-white font-bold tracking-widest">Log In</h2>
         <div class="inputbox">
             <input type="text" required="required">
             <i class="fa-regular fa-user"></i>
@@ -64,12 +64,26 @@
             <input type="submit" value="Log In" >
         </div>
 
-        <p>Not Registered?<a href="#" class="Create"> Create An Account</a></p>
+        <p class="text-gray-400 text-xs font-light">Not Registered?<a href="#" class="Create text-white font-medium no-underline"> Create An Account</a></p>
     
     </div>
 
+    <!-- <form>
+        <div class="flex flex-col mb-4">
+          <label class="text-gray-700 font-medium mb-2" for="email">Email</label>
+          <input class="bg-gray-200 p-2 rounded-lg w-full" type="email" id="email" required>
+        </div>
+        <div class="flex flex-col mb-4">
+          <label class="text-gray-700 font-medium mb-2" for="password">Password</label>
+          <input class="bg-gray-200 p-2 rounded-lg w-full" type="password" id="password" required>
+        </div>
+        <button class="bg-indigo-500 text-white py-2 px-4 rounded-lg hover:bg-indigo-600" type="submit">Log In</button>
+      </form> -->
+      
 
    </div>
+
+  
     <script src="script.js"></script>
 </body>
 </html>
